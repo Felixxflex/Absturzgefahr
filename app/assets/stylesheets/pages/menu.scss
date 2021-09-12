@@ -10,7 +10,8 @@ body {
     background-size: 4%;
     height: 100vh;
     width: 100%;
-    background-image: url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1631279208/Global_itjuq3.png');
+    // background-image: url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1631279208/Global_itjuq3.png');
+    background-image: url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1631458940/Group_7_ls1i2h.png');
     background-size: cover;
 }
 
@@ -286,5 +287,20 @@ body {
     }
     .nav ul li a {
         font-size: 8vh;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        // font-family: 'Montserrat', sans-serif;
+        // font-weight: 300;
+        // font-size: 15px;
+        // line-height: 1.7;
+        // color: #ececee;
+        // overflow: hidden;
+        // background-position: center;
+        // background-repeat: repeat;
+        // background-image: url('');
+        // background-size: cover;
     }
 }

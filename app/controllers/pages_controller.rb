@@ -3,12 +3,18 @@ class PagesController < ApplicationController
   
   
     def boys
+
+    end
+    
+    def services
+        
     end
 
-  
-    
-  
+    def inprogress
+        
     end
+  
+end
       
   
   
