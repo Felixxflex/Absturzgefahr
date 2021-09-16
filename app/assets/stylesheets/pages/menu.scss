@@ -3,15 +3,16 @@ body {
     font-weight: 300;
     font-size: 15px;
     line-height: 1.7;
-    color: #ececee;
-    overflow: hidden;
+    overflow: auto;
     background-position: center;
     background-repeat: repeat;
     background-size: 4%;
     height: 100vh;
     width: 100%;
-    // background-image: url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1631279208/Global_itjuq3.png');
-    background-image: url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1631458940/Group_7_ls1i2h.png');
+    background-position: center center;
+    background-image: url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1631829466/GlobalGroup_p3f2ll.png');
+    background-repeat: no-repeat;
+    // background-image: url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1631458940/Group_7_ls1i2h.png');
     background-size: cover;
 }
 
@@ -260,12 +261,11 @@ body {
     transition: all 250ms linear;
 }
 
-.logo img {
-    height: 26px;
-    width: auto;
-    display: block;
-}
-
+// .logo img {
+//     height: 26px;
+//     width: auto;
+//     display: block;
+// }
 @media screen and (max-width: 991px) {
     .menu-icon:checked+label,
     .menu-icon:not(:checked)+label {
@@ -290,17 +290,17 @@ body {
     }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 732px) and (-webkit-min-device-pixel-ratio: 2) {
     body {
-        // font-family: 'Montserrat', sans-serif;
-        // font-weight: 300;
-        // font-size: 15px;
-        // line-height: 1.7;
-        // color: #ececee;
-        // overflow: hidden;
-        // background-position: center;
-        // background-repeat: repeat;
-        // background-image: url('');
-        // background-size: cover;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 1.7;
+        color: #ececee;
+        overflow: hidden;
+        background-position: center;
+        background-repeat: repeat;
+        background-image: url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1631461186/Group_5_lnky3j.png');
+        background-size: cover;
     }
 }

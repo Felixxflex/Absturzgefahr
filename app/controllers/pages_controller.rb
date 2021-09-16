@@ -13,6 +13,10 @@ class PagesController < ApplicationController
     def inprogress
         
     end
+
+    def aboutus
+        
+    end
   
 end
       
