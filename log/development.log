@@ -19124,3 +19124,83 @@ Processing by PagesController#boys as HTML
 Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 3380)
 
 
+Started GET "/contact" for ::1 at 2021-09-20 16:45:48 +0200
+Processing by ContactsController#create as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (Duration: 82.1ms | Allocations: 3376)
+  Rendered shared/_navbar.html.erb (Duration: 2.6ms | Allocations: 97)
+Completed 200 OK in 786ms (Views: 754.5ms | ActiveRecord: 0.0ms | Allocations: 48141)
+
+
+Started GET "/" for ::1 at 2021-09-20 16:45:52 +0200
+Processing by PagesController#boys as HTML
+  Rendering pages/boys.html.erb within layouts/application
+  Rendered pages/boys.html.erb within layouts/application (Duration: 1.2ms | Allocations: 202)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 3375)
+
+
+Started GET "/" for ::1 at 2021-09-20 16:46:31 +0200
+Processing by PagesController#boys as HTML
+  Rendering pages/boys.html.erb within layouts/application
+  Rendered pages/boys.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 173ms (Views: 171.9ms | ActiveRecord: 0.0ms | Allocations: 33768)
+
+
+Started GET "/" for ::1 at 2021-09-20 16:46:34 +0200
+Processing by PagesController#boys as HTML
+  Rendering pages/boys.html.erb within layouts/application
+  Rendered pages/boys.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 2781)
+
+
+Started GET "/" for ::1 at 2021-09-20 16:46:35 +0200
+Processing by PagesController#boys as HTML
+  Rendering pages/boys.html.erb within layouts/application
+  Rendered pages/boys.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 2787)
+
+
+Started GET "/" for ::1 at 2021-09-20 16:46:37 +0200
+Processing by PagesController#boys as HTML
+  Rendering pages/boys.html.erb within layouts/application
+  Rendered pages/boys.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 2781)
+
+
+Started GET "/" for ::1 at 2021-09-20 16:46:37 +0200
+Processing by PagesController#boys as HTML
+  Rendering pages/boys.html.erb within layouts/application
+  Rendered pages/boys.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2785)
+
+
+Started GET "/" for ::1 at 2021-09-20 16:46:52 +0200
+Processing by PagesController#boys as HTML
+  Rendering pages/boys.html.erb within layouts/application
+  Rendered pages/boys.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 123ms (Views: 121.9ms | ActiveRecord: 0.0ms | Allocations: 32114)
+
+
+Started GET "/" for ::1 at 2021-09-20 16:47:04 +0200
+Processing by PagesController#boys as HTML
+  Rendering pages/boys.html.erb within layouts/application
+  Rendered pages/boys.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 100ms (Views: 98.4ms | ActiveRecord: 0.0ms | Allocations: 32126)
+
+
+Started GET "/" for ::1 at 2021-09-20 16:47:13 +0200
+Processing by PagesController#boys as HTML
+  Rendering pages/boys.html.erb within layouts/application
+  Rendered pages/boys.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 122ms (Views: 121.2ms | ActiveRecord: 0.0ms | Allocations: 32099)
+
+
