@@ -23,7 +23,7 @@
     background-color: rgb(29, 30, 34);
 }
 
-.promo {
+.promo2 {
     position: relative;
     cursor: pointer;
     width: var(--size);
@@ -31,7 +31,7 @@
     margin-bottom: 2rem;
 }
 
-.title {
+.title2 {
     --font-size: calc(var(--size) / 8);
     display: flex;
     align-items: center;
@@ -47,7 +47,7 @@
     pointer-events: none;
 }
 
-.title::after {
+.title2::after {
     content: attr(data-cta);
     display: inline-block;
     margin-left: 1.5vmin;
@@ -59,7 +59,7 @@
     transition: transform var(--duration) var(--ease-out), opacity var(--duration) var(--ease-out);
 }
 
-.image-wrapper {
+.image-wrapper2 {
     width: var(--size);
     height: var(--size);
     overflow: hidden;
@@ -67,7 +67,7 @@
     transition: transform var(--duration) var(--ease-out), clip-path var(--duration) var(--ease-out);
 }
 
-.image-wrapper img {
+.image-wrapper2 .newimgclass {
     position: relative;
     width: 120%;
     height: 100%;
@@ -76,7 +76,7 @@
     transition: transform var(--duration) var(--ease-out);
 }
 
-.image-wrapper::after {
+.image-wrapper2::after {
     content: "";
     position: absolute;
     top: 0;
@@ -90,32 +90,41 @@
     transition: opacity var(--duration) var(--ease-out);
 }
 
-.promo:hover img {
+.promo2:hover .newimgclass {
     transform: translateX(0);
 }
 
-.promo:hover .image-wrapper {
+.promo2:hover .image-wrapper2 {
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     transform: translateX(25%);
     transition-timing-function: var(--bounce-out);
 }
 
-.promo:hover .title {
+.promo2:hover .title {
     transform: translate(5%, -50%);
     transition-timing-function: var(--bounce-out);
 }
 
-.promo:hover .title::after {
+.promo2:hover .title::after {
     opacity: 1;
     transform: translateX(0);
     transition-timing-function: var(--bounce-out);
 }
 
-.promo:hover .image-wrapper::after {
+.promo2:hover .image-wrapper2::after {
     opacity: 1;
 }
 
 .whatdoyouneed {
     display: flex;
     justify-content: center;
+}
+
+.row4 {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.container28 {
+    margin-left: 9%;
 }

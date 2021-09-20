@@ -6,135 +6,69 @@
   			<li><a href="/">Home</a></li>
   			<li><a href="/services">Services</a></li>
   			<li><a href="/aboutus">About us</a></li>
-  			<li><a href="#">Contact</a></li>
+  			<li><a href="/contact">Contact</a></li>
   		</ul>
   	</nav>
 
 
+		<div class="pagebutton">
+<a href="/contact" class="hbtn hb-fill-right">Contact us</a>
+        </div>
 
-<div class="buttonloco">
 
-
-
-
-<div class="carousel">
-  <div class="slider">
-
-    <div class="card">
-      <a href="/concerts"><div class="card-bg" style="background-image: url();">
-      </div></a>
+<div class="team-grid">
+        <div class="container">
+        <div class="newh1">
+        <h1 class="h1trans">Choose your service :</h1>
+        </div>
+            <div class="intro">
+            </div>
+            <div class="row2 people">
+                <div class="col-md-4 col-lg-2 item">
+                    <div class="box" style="background-image:url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1631880162/Group_2_mcvovi.png')">
+                        <div class="cover">
+                           <a href="/festivals"> <h3 class="name">Secured Festivals</h3></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 item">
+                    <div class="box" style="background-image:url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1631880181/Group_5_csfhq2.png')">
+                        <div class="cover">
+                            <a href="/concerts"><h3 class="name">Secured Concerts</h3></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 item">
+                    <div class="box" style="background-image:url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1631880169/Group_3_pvtnhc.png')">
+                        <div class="cover">
+                            <a href="/soccer"><h3 class="name">Secured Soccer</h3></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 item">
+                    <div class="box" style="background-image:url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1631880357/Group_6_imvm10.png')">
+                        <div class="cover">
+                            <a href="/privatevent"><h3 class="name">Secured Private Events</h3></a>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-4 col-lg-2 item">
+                    <div class="box" style="background-image:url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1631880150/Group_4_o6smgq.png')">
+                        <div class="cover">
+                            <a href="/vip"><h3 class="name">Secured V.I.P Escort</h3></a>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-4 col-lg-2 item">
+                    <div class="box" style="background-image:url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1631880163/Group_1_yoqget.png')">
+                        <div class="cover">
+                            <a href="/hostesservice"><h3 class="name">Hostess Service</h3></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="card">
-      <a href="/festivals"><div class="card-bg" style="background-image: url();">
-      </div></a>
-    </div>
-
-    <div class="card">
-      <a href="/privatevent"><div class="card-bg" style="background-image: url();">
-      </div></a>
-    </div>
-
-    <div class="card">
-      <a href="soccer"><div class="card-bg" style="background-image: url();">
-      </div></a>
-    </div>
-
-    <div class="card">
-      <a href="/vip"><div class="card-bg" style="background-image: url();">
-      </div></a>
-    </div>
-
-    <div class="card">
-      <a href="/hostesservice"><div class="card-bg" style="background-image: url();">
-      </div></a>
-    </div>
-
-   
-</div>
-  </div>
-</div>
-
-
-<script>
-(function ($) {
-  $(function () {
-    var slider = $(".slider").flickity({
-      imagesLoaded: true,
-      percentPosition: false,
-      prevNextButtons: false, //true = enable buttons
-      initialIndex: 3,
-      pageDots: false, //true = enable dots
-      groupCells: 1,
-      selectedAttraction: 0.2,
-      friction: 0.8,
-      draggable: true
-    });
-
-    //this enables clicking on cards
-    slider.on(
-      "staticClick.flickity",
-      function (event, pointer, cellElement, cellIndex) {
-        if (typeof cellIndex == "number") {
-          slider.flickity("selectCell", cellIndex);
-        }
-      }
-    );
-
-    //this resizes the cards and centers the carousel because it tends to move a few pixels to the right if .resize() and .reposition() aren't used
-    var flkty = slider.data("flickity");
-    flkty.selectedElement.classList.add("is-custom-selected");
-    flkty.resize();
-    flkty.reposition();
-    let time = 0;
-    function reposition() {
-      flkty.reposition();
-      if (time++ < 10) {
-        requestAnimationFrame(reposition);
-      } else {
-        $(".flickity-prev-next-button").css("pointer-events", "auto");
-      }
-    }
-    requestAnimationFrame(reposition);
-
-    //this expands the cards when in focus
-    flkty.on("settle", () => {
-      $(".card").removeClass("is-custom-selected");
-      $(".flickity-prev-next-button").css("pointer-events", "none");
-      flkty.selectedElement.classList.add("is-custom-selected");
-
-      let time = 0;
-      function reposition() {
-        flkty.reposition();
-        if (time++ < 10) {
-          requestAnimationFrame(reposition);
-        } else {
-          $(".flickity-prev-next-button").css("pointer-events", "auto");
-        }
-      }
-      requestAnimationFrame(reposition);
-    });
-
-    //this reveals the carousel
-    $(".carousel").addClass("animation-reveal");
-    $(".carousel").css("opacity", "0");
-    flkty.resize();
-    flkty.reposition();
-    setTimeout(() => {
-      $(".carousel").removeClass("animation-reveal");
-      $(".carousel").css("opacity", "1");
-      flkty.resize();
-      flkty.reposition();
-      let time = 0;
-      function reposition() {
-        flkty.reposition();
-        if (time++ < 10) {
-          requestAnimationFrame(reposition);
-        }
-      }
-      requestAnimationFrame(reposition);
-    }, 1000);
-  });
-})(jQuery);
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>

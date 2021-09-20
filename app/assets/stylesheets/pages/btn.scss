@@ -1,0 +1,66 @@
+.hbtn {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 20px;
+    margin: 0px 3px 6px;
+    text-align: center;
+    border: 2px solid #ADB5BD;
+    text-decoration: none;
+    color: #ADB5BD;
+    white-space: nowrap;
+    border-radius: 0.5rem;
+    z-index: 0;
+}
+
+.hbtn i {
+    padding-right: 8px;
+}
+
+.hb-fill-right::before {
+    position: absolute;
+    content: "";
+    background: #ADB5BD;
+    transition-duration: 0.3s;
+    z-index: -1;
+    inset: 0px auto auto 0px;
+    width: 0px;
+    height: 100%;
+    opacity: 1;
+}
+
+.hb-fill-right:hover::before {
+    opacity: 1;
+}
+
+.hb-fill-right:hover {
+    color: rgb(0, 0, 0);
+    background: #ADB5BD;
+    transition: color 0.3s ease 0s, background 0s ease 0.3s;
+}
+
+.pagebutton {
+    display: flex;
+    justify-content: center;
+    margin-left: -68%;
+    margin-top: 17%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 732px) and (-webkit-min-device-pixel-ratio: 2) {
+    .pagebutton {
+        display: flex;
+        justify-content: center;
+        margin-left: -72.5%;
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (min-width: 1030px) and (max-width: 1500px) {
+    .pagebutton {
+        display: flex;
+        justify-content: center;
+        margin-left: -65.5%;
+        margin-top: 19%;
+    }
+}

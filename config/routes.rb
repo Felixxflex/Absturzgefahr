@@ -3,6 +3,11 @@ Rails.application.routes.draw do
 #  root to: 'pages#inprogress'
   root to: 'pages#boys'
 
+ 
+  resources :contacts, only: [:new, :create]
+  get "/contact", to: "contacts#create", as: "contact"
+  # get "/contact/create", to: "contacts#create", as: "contactnew"
+
   get "/services", to: "pages#services", as: "services"
   get "/aboutus", to: "pages#aboutus", as: "aboutus"
   

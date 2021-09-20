@@ -3,7 +3,7 @@
     height: 200vh;
 }
 
-.container45 {
+.container4 {
     /* hide fixed overflow contents */
     clip: rect(0, auto, auto, 0);
     /* does not work if overflow = visible */
@@ -18,7 +18,7 @@
     -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
 }
 
-.container_solid12 {
+.container_solid4 {
     background: rgb(29, 30, 34);
     /* position this container at the top of its parent element */
     top: 0;
@@ -45,9 +45,9 @@
     font-weight: 900;
 }
 
-.container_solid12 .title_wrapper h1 {
+.container_solid4 .title_wrapper h1 {
     /* the text background */
-    background: url(https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2200&q=80);
+    background-color: #ffffff;
     background-size: 100vw auto;
     background-position: center;
     /* clip the text is possible */
@@ -59,9 +59,9 @@
     color: black;
 }
 
-.container_image12 {
+.container_image4 {
     /* Grab a free image from unsplash */
-    background-image: url(https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2200&q=80);
+    background-image: url('https://res.cloudinary.com/dn6wh4u2h/image/upload/v1631880357/Group_6_imvm10.png');
     background-size: 100vw auto;
     background-position: center;
     background-attachment: fixed;
@@ -70,7 +70,7 @@
 }
 
 .container_image12 .title_wrapper h1 {
-    color: rgb(29, 30, 34);
+    color: whitesmoke;
 }
 
 section {
